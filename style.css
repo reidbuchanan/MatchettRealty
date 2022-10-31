@@ -1,0 +1,50 @@
+
+
+
+.hover-zoom:hover {
+    transform: scale(1.5);
+}
+
+.img-exp {
+    width: 15%;
+    margin-right: .5em;
+}
+
+#newsletterModal, .navbar-brand {
+    font-family: 'Tangerine',serif;
+    font-size: 2em;
+}
+
+.p-modal, .p-sell {
+    font-style: italic;
+}
+
+/* navbar brand adjustment for screen size */
+
+@media (min-width: 992px) {
+    .btn-listing{
+        padding: .5rem;
+    }
+    .img-exp {
+        width: 5%;
+        
+    }
+}
+
+/* carousel image adjustment for screen size */
+
+.img-large{
+    width: 100%;
+}
+@media (min-width: 767px) {
+    .img-large {
+       width: 75%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .img-large {
+        width: 50%;
+     }
+}
