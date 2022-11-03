@@ -23,19 +23,19 @@
             
             <a href="https://prestonmatchett.exprealty.com/index.php" class="navbar-brand text-warning p-2 rounded">Matchett Realty</a>
            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-label="toggler"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto m-2">
                     <li class="nav-item">
-                        <a href="#listings" class="nav-link">Listings</a>
+                        <a href="#listings" class="nav-link" aria-label="Listings">Listings</a>
                     </li>
                     <li class="nav-item"> 
-                        <a href="#sell" class="nav-link">Sell</a>       
+                        <a href="#sell" class="nav-link" aria-label="Sell">Sell</a>       
                     </li>
                     <li class="nav-item"> 
-                        <a href="#about" class="nav-link">About</a>   
+                        <a href="#about" class="nav-link" aria-label="About">About</a>   
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -93,7 +93,7 @@
         </div>
        <div class="col-lg-3 col-md-12">
         <label for="chooseStyle" class="form-label">Choose style</label>
-         <select class="form-select form-select-md " aria-label=".form-select-sm ">
+         <select class="form-select form-select-md " aria-label="House type select form ">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">House</option>
@@ -103,7 +103,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBed" class="form-label">Bed</label>
-        <select class="form-select form-select-md " aria-label=".form-select-sm ">
+        <select class="form-select form-select-md " aria-label="Number of beds select form ">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -114,7 +114,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBath" class="form-label">Bath</label>
-        <select class="form-select form-select-md " aria-label=".form-select-sm ">
+        <select class="form-select form-select-md " aria-label="Number of baths select form">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -125,14 +125,14 @@
           </div>
           <div class="col-lg-1 col-md-6 ">
             <label for="chooseMin" class="form-label">Min $</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" aria-label="Choose mininum" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="col-lg-1 col-md-6 ">
             <label for="chooseMax" class="form-label">Max $</label>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" aria-label="Choose maximum" aria-describedby="inputGroup-sizing-sm">
           </div>
             <div class="col-lg-2 m-lg-0 m-4">
-                <button type="submit" class="btn btn-warning btn-listing mx-auto w-50 fw-bold">Submit</button>
+                <button type="submit" role="submit" class="btn btn-warning btn-listing mx-auto w-50 fw-bold">Submit</button>
               </div>
             </div>
        </div>
@@ -168,11 +168,11 @@
                 <span class="text-black ">Multiple Estimates</span>
             </div>
             <div class="smooth-render">
-                <img src="assets/actual-sold-prices-color.00eff2e.svg" alt="Multiple estimates" class="d-block mx-auto mb-3 hover-zoom">
+                <img src="assets/actual-sold-prices-color.00eff2e.svg" alt="Actual Sold Prices" class="d-block mx-auto mb-3 hover-zoom">
                 <span class="text-black ">Actual Sold Prices</span>
             </div>
             <div class="smooth-render">
-                <img src="assets/potential-buyers-color.7a27a8d.svg" alt="Multiple estimates" class="d-block mx-auto mb-3 hover-zoom">
+                <img src="assets/potential-buyers-color.7a27a8d.svg" alt="Potential Buyers" class="d-block mx-auto mb-3 hover-zoom">
                 <span class="text-black ">Potential Buyers</span>
             </div>
         </div>
@@ -239,7 +239,7 @@
               <form action="" class="form-modal" name="modal-newsletter">
                 <div class="mb-3">
                     <label for="first-name" class="col-form-label">First Name:</label>
-                    <input type="text" name="firstname" class="form-control" id="first-name">
+                    <input type="text" name="firstname" class="form-control" id="first-name" >
                 </div>
                 <div class="mb-3">
                     <label for="last-name" class="col-form-label">Last Name:</label>

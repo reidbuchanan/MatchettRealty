@@ -1,54 +1,57 @@
-
-
-
 .hover-zoom:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .img-exp {
-    width: 15%;
-    margin-right: .5em;
+  width: 15%;
+  margin-right: 0.5em;
 }
 
-#newsletterModal, .navbar-brand {
-    font-family: 'Tangerine',serif;
-    font-size: 2em;
+#newsletterModal,
+.navbar-brand {
+  font-family: "Tangerine", serif;
+  font-size: 2em;
 }
 
-.p-modal, .p-sell {
-    font-style: italic;
+.p-modal,
+.p-sell {
+  font-style: italic;
 }
 
 .form-modal .error {
-    color: #ff0000;
-  }
+  color: #ff0000;
+}
 
 /* navbar brand adjustment for screen size */
 
 @media (min-width: 992px) {
-    .btn-listing{
-        padding: .5rem;
-    }
-    .img-exp {
-        width: 5%;
-        
-    }
+  .btn-listing {
+    padding-right: 65px;
+  }
+  .img-exp {
+    width: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn-listing {
+    padding-right: 65px;
+  }
 }
 
 /* carousel image adjustment for screen size */
 
-.img-large{
-    width: 100%;
+.img-large {
+  width: 100%;
 }
 @media (min-width: 767px) {
-    .img-large {
-       width: 75%;
-    }
-    
+  .img-large {
+    width: 75%;
+  }
 }
 
 @media (min-width: 992px) {
-    .img-large {
-        width: 50%;
-     }
+  .img-large {
+    width: 50%;
+  }
 }
