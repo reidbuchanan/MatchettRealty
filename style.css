@@ -25,15 +25,12 @@
 /* navbar brand adjustment for screen size */
 
 @media (min-width: 992px) {
-  .btn-listing {
-    padding-right: 65px;
-  }
   .img-exp {
     width: 5%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 992px) {
   .btn-listing {
     padding-right: 65px;
   }
