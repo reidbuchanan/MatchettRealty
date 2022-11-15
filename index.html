@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
    <link rel="stylesheet" href="style.css">
@@ -46,7 +43,7 @@
         </div>
     </nav>
     <!-- slideshow -->
-    <section class="bg-dark text-light p-5 text-center" >
+    <div class="bg-dark text-light p-5 text-center" >
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -73,17 +70,17 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-    </section>
+        </div>
 
     <!-- Listings -->
     <section class="section bg-light text-dark text-center p-5" id="listings">
         <div class="container">
-       <h1 class="text-warning my-3 text-lg-start">Search for a listing</h2>
+       <h1 class="text-warning my-3 text-lg-start">Search for a listing</h1>
         <div class="row align-items-end">
             <div class="col-lg-3 col-md-12">
         <label for="chooseCity" class="form-label">Choose a city</label>
         <input class="form-control" list="datalistOptions" id="chooseCity" placeholder="Choose a city...">
-            <datalist id="datalistOptions">
+            <datalist id="datalistOptions" name="cities">
                 <option value="Scottsdale">
                 <option value="Paradise Valley">
                 <option value="Phoenix">
@@ -93,7 +90,7 @@
         </div>
        <div class="col-lg-3 col-md-12">
         <label for="chooseStyle" class="form-label">Choose style</label>
-         <select class="form-select form-select-md " aria-label="House type select form ">
+         <select class="form-select form-select-md" name="HouseType" aria-label="House type select form" >
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">House</option>
@@ -103,7 +100,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBed" class="form-label">Bed</label>
-        <select class="form-select form-select-md " aria-label="Number of beds select form ">
+        <select class="form-select form-select-md" name="Beds" aria-label="Number of beds select form ">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -114,7 +111,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBath" class="form-label">Bath</label>
-        <select class="form-select form-select-md " aria-label="Number of baths select form">
+        <select class="form-select form-select-md" name="bathrooms" aria-label="Number of baths select form">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -132,7 +129,7 @@
             <input type="text" class="form-control" aria-label="Choose maximum" aria-describedby="inputGroup-sizing-sm">
           </div>
             <div class="col-lg-2 m-lg-0 mt-4">
-                <button type="submit" role="submit" class="btn btn-warning btn-listing mx-auto w-50 fw-bold">Submit</button>
+                <button type="submit"  class="btn btn-warning btn-listing mx-auto w-50 fw-bold">Submit</button>
               </div>
             </div>
        </div>
@@ -148,11 +145,11 @@
         <form class="row align-items-end" name="sell">
             <div class="col-lg-6 col-md-12 ">
                 <label for="map" class="py-2 block text-strong w-100">Enter your address</label>
-                <input type="text" placeholder="Enter your home address" id="map" class="address-input form-control" id="validationDefault02" required >
+                <input type="text" placeholder="Enter your home address"  class="address-input form-control" id="validationDefault02" required >
               </div>
               <div class="col-lg-3 col-md-12 ">
                 <label for="unit" class="text-strong py-2 w-100">Unit Number</label>
-                <input type="text" placeholder="Unit #" id="unit" class="form-control" id="validationDefault01" required>
+                <input type="text" placeholder="Unit #"  class="form-control" id="validationDefault01" required>
               </div> 
               <div class="col-lg-3 mt-4">
                 <button type="submit" class="btn btn-warning w-50 mx-auto fw-bold">Next</button>
@@ -176,7 +173,7 @@
                 <span class="text-black ">Potential Buyers</span>
             </div>
         </div>
-    </div>
+    
     </section>
 
     <!-- About -->
@@ -236,7 +233,7 @@
             </div>
             <div class="modal-body">
               <p class="h6 text-muted p-modal">Fill out this form for exclusive updates and listings right to your inbox</p>
-              <form action="" class="form-modal" name="modal-newsletter">
+              <form action="post" class="form-modal" name="modal-newsletter">
                 <div class="mb-3">
                     <label for="first-name" class="col-form-label">First Name:</label>
                     <input type="text" name="firstname" class="form-control" id="first-name" >
