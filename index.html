@@ -80,17 +80,18 @@
             <div class="col-lg-3 col-md-12">
         <label for="chooseCity" class="form-label">Choose a city</label>
         <input class="form-control" list="datalistOptions" id="chooseCity" placeholder="Choose a city...">
-            <datalist id="datalistOptions" name="cities">
-                <option value="Scottsdale">
-                <option value="Paradise Valley">
-                <option value="Phoenix">
-                <option value="Flagstaff">
-                <option value="Sedona">
+            <datalist id="datalistOptions">
+                <option value="Scottsdale">Scottsdale</option>
+                <option value="Paradise Valley">Paradise Valley</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Flagstaff">Flagstaff</option>
+                <option value="Sedona">Sedona</option>
             </datalist>
         </div>
        <div class="col-lg-3 col-md-12">
         <label for="chooseStyle" class="form-label">Choose style</label>
-         <select class="form-select form-select-md" name="HouseType" aria-label="House type select form" >
+        
+         <select class="form-select form-select-md" id="chooseStyle" name="HouseType" aria-label="House type select form" >
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">House</option>
@@ -100,6 +101,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBed" class="form-label">Bed</label>
+       
         <select class="form-select form-select-md" name="Beds" aria-label="Number of beds select form ">
             <option selected></option>
             <option value="Any">Any</option>
@@ -111,6 +113,7 @@
        </div>
        <div class="col-lg-1 col-md-6">
         <label for="chooseBath" class="form-label">Bath</label>
+        
         <select class="form-select form-select-md" name="bathrooms" aria-label="Number of baths select form">
             <option selected></option>
             <option value="Any">Any</option>
@@ -122,11 +125,11 @@
           </div>
           <div class="col-lg-1 col-md-6 ">
             <label for="chooseMin" class="form-label">Min $</label>
-            <input type="text" class="form-control" aria-label="Choose mininum" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" aria-label="Choose mininum" id="chooseMin">
           </div>
           <div class="col-lg-1 col-md-6 ">
             <label for="chooseMax" class="form-label">Max $</label>
-            <input type="text" class="form-control" aria-label="Choose maximum" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" aria-label="Choose maximum" id="chooseMax">
           </div>
             <div class="col-lg-2 m-lg-0 mt-4">
                 <button type="submit"  class="btn btn-warning btn-listing mx-auto w-50 fw-bold">Submit</button>
