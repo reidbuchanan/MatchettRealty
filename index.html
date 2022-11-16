@@ -20,7 +20,7 @@
             
             <a href="https://prestonmatchett.exprealty.com/index.php" class="navbar-brand text-warning p-2 rounded">Matchett Realty</a>
            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"  aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" aria-label="toggler"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
@@ -75,7 +75,7 @@
     <!-- Listings -->
     <section class="section bg-light text-dark text-center p-5" id="listings">
         <div class="container">
-       <h1 class="text-warning my-3 text-lg-start">Search for a listing</h1>
+       <h2 class="text-warning my-3 text-lg-start">Search for a listing</h2>
         <div class="row align-items-end">
             <div class="col-lg-3 col-md-12">
         <label for="chooseCity" class="form-label">Choose a city</label>
@@ -102,7 +102,7 @@
        <div class="col-lg-1 col-md-6">
         <label for="chooseBed" class="form-label">Bed</label>
        
-        <select class="form-select form-select-md" name="Beds" aria-label="Number of beds select form ">
+        <select class="form-select form-select-md" id="chooseBed" name="Beds" aria-label="Number of beds select form ">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -114,7 +114,7 @@
        <div class="col-lg-1 col-md-6">
         <label for="chooseBath" class="form-label">Bath</label>
         
-        <select class="form-select form-select-md" name="bathrooms" aria-label="Number of baths select form">
+        <select class="form-select form-select-md" id="chooseBath" name="bathrooms" aria-label="Number of baths select form">
             <option selected></option>
             <option value="Any">Any</option>
             <option value="1">1</option>
@@ -142,16 +142,16 @@
     <!-- Sell -->
     <section class="bg-light text-center p-5" id="sell">
         <div class="container">
-        <h1 class="text-warning text-lg-start mb-lg-2 mb-4 ">Sell your home</h1>
+        <h2 class="text-warning text-lg-start mb-lg-2 mb-4 ">Sell your home</h2>
         <p class="lead text-lg-start p-sell"><span class="text-decoration-underline">Instantly</span> get a detailed home price estimate...
             See what your neighbors are selling their home for!</p>
         <form class="row align-items-end" name="sell">
             <div class="col-lg-6 col-md-12 ">
-                <label for="map" class="py-2 block text-strong w-100">Enter your address</label>
+                <label for="validationDefault02" class="py-2 block text-strong w-100">Enter your address</label>
                 <input type="text" placeholder="Enter your home address"  class="address-input form-control" id="validationDefault02" required >
               </div>
               <div class="col-lg-3 col-md-12 ">
-                <label for="unit" class="text-strong py-2 w-100">Unit Number</label>
+                <label for="validationDefault01" class="text-strong py-2 w-100">Unit Number</label>
                 <input type="text" placeholder="Unit #"  class="form-control" id="validationDefault01" required>
               </div> 
               <div class="col-lg-3 mt-4">
@@ -160,7 +160,7 @@
               </form>
         </div>
         <div class="row my-3">
-        <span class="text-left h3">What's in the report?</span>
+        <h3 class="text-left h3">What's in the report?</h3>
     </div>
         <div class="d-flex justify-content-evenly mt-2">
             <div class="smooth-render">
@@ -184,7 +184,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                <h1 class="text-warning text-lg-start">About</h1>
+                <h2 class="text-warning text-lg-start">About</h2>
                 <p class="text-start">
                     Preston Matchett is one of Arizona's most trusted real estate agents. As a member of eXp Realty, Preston works with individuals, investors and developers who are interested in some of the most coveted properties throughout Arizona.
                     As a former professional athlete, Preston has an extremely strong work ethic and is committed to work tirelessly for his clients.  A high-touch agent with extensive market and economic knowledge and unmatched devotion to his clients, you will feel confident knowing that he will offer his candid advice and fight for you.
@@ -227,11 +227,11 @@
     </footer>
 
     <!-- contact modal -->
-    <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="newsletter modal" aria-hidden="true">
+    <div class="modal fade" id="newsletter" tabindex="-1"  aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-2 text-warning" id="newsletterModal">Matchett Realty</h1>
+              <h2 class="modal-title fs-2 text-warning" id="newsletterModal">Matchett Realty</h2>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
